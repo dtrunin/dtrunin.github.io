@@ -1,0 +1,26 @@
+<header class="page-header" role="banner">
+    <div class="container">
+        <div class="page-header__line">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
+        </div>
+
+        <nav class="page-header__line">
+            <ul class="site-nav">
+                {%- for menu_item in site.menu_items -%}
+                {%- if menu_item.type == "page" -%}
+                <li class="nav-item">
+                    <a class="nav-item__link" href="{{ menu_item.url | relative_url }}">{{ menu_item.title | escape
+                        }}</a>
+                </li>
+                {%- endif -%}
+                {%- if menu_item.type == "social" -%}
+                <li class="nav-item">
+                    <a class="nav-item__image {{ menu_item.name }}" target="_blank" title="{{  menu_item.title }}"
+                       href="{{ menu_item.url }}"></a>
+                </li>
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+        </nav>
+    </div>
+</header>

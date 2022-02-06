@@ -1,0 +1,109 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.page-header {
+  background-color: $header-background-color;
+  padding-top: 40px;
+
+  a {
+    color: $header-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__line {
+    display: flex;
+    flex: none;
+    padding: 5px;
+    justify-content: center;
+  }
+}
+
+.site-nav {
+  align-items: center;
+  display: flex;
+  flex: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 5px;
+
+  &__image {
+    background-image: url('/assets/images/social-icons.png');
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+
+    &.instagram {
+      background-position: 0 0;
+    }
+
+    &.gitlab {
+      background-position: -24px 2px;
+    }
+
+    &.linkedin {
+      background-position: -48px 0;
+    }
+  }
+}
+
+.page-title {
+  text-align: center;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+.post-list {
+  text-align: center;
+}
+
+.post-info {
+  list-style: none;
+  padding: 10px;
+
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.post-meta {
+  text-align: center;
+  font-family: $font-family-monospace;
+  padding: 5px;
+
+  &__item {
+    font-size: $small-font-size;
+    list-style: none;
+  }
+
+  &__list-item {
+    display: inline-block;
+    list-style: none;
+    padding-right: 5px;
+
+    &:not(:last-child)::after {
+      content: ',';
+    }
+  }
+}
+
+.post-title {
+  text-align: center;
+}
