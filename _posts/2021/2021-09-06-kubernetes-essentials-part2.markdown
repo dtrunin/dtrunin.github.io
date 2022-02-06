@@ -421,6 +421,6 @@ nginx-demo-748d94467   0         0         0       40m
 nginx-demo-9b59dc694   3         3         3       113m
 ```
 
-[Code examples](https://gitlab.com/trunin/blog-examples/kube-essentials-part2)
+[Code samples](https://github.com/dtrunin/kube-replicaset-deployment)
 
 [part1]: {% post_url 2021/2021-08-15-kubernetes-essentials-part1 %} "Kubernetes Essentials: Pod, Service, Ingress"
