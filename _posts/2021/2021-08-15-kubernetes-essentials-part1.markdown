@@ -270,5 +270,5 @@ $ curl -H "Host: nginx-demo" 192.168.99.100
 
 In the response we see an nginx welcome page. Hooray, our first application is successfully deployed!
 
-[Code examples](https://gitlab.com/trunin/blog-examples/kube-essentials-part1)
+[Code samples](https://github.com/dtrunin/kube-replicaset-deployment)
 
