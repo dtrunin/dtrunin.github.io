@@ -21,11 +21,9 @@
 title: Dmitry Trunin
 email: trunin.dmitry@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Dmitry Trunin blog. Дмитрий Трунин блог.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dtrunin.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 menu_items:
   - type: page
@@ -60,6 +58,7 @@ google_analytics: G-G58WKGE64M
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 
 # Exclude from processing.
