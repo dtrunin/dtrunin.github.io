@@ -166,6 +166,8 @@ Also browser doesn't wait fetching async and defer scripts.
 6. When the whole page has loaded, including all dependent resources such as stylesheets and images,
 the `Window.load` event is triggered. The browser doesn't wait for lazy loading images. 
 
+[Code sample](https://github.com/dtrunin/critical-rendering-path)
+
 ### References / Further Reading
 [https://developer.mozilla.org/en-US/docs/Glossary/speculative_parsing](https://developer.mozilla.org/en-US/docs/Glossary/speculative_parsing)<br>
 [https://developers.google.com/web/fundamentals/performance/critical-rendering-path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path)<br>
