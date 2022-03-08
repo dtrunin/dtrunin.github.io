@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Docker Entrypoint and Cmd"
+title: "Docker Entrypoint vs Cmd"
 ---
 
-### Docker ENTRYPOINT and CMD
+### Docker ENTRYPOINT vs CMD
 
 Dockerfile should specify at least one of CMD or ENTRYPOINT commands.
-Both instructions might have exec `CMD ["executable","param1","param2"]` 
+Both instructions might have exec (`CMD ["executable","param1","param2"]`) 
 and (`CMD command param1 param2`) shell forms. The exec form is the preferred form. 
 
 #### ENTRYPOINT
@@ -60,8 +60,8 @@ $ docker run image www.yahoo.com
 
 #### User is supposed to change container executable and its default arguments
 
-The container should always execute the same command - `ping`, but argument should be defined by a user.
-If user doesn't pass an argument then default argument is used - `www.google.com`.
+The container should execute commands specified by a user.
+If user doesn't pass arguments then default command is executed - `ping www.google.com`.
 
 ```dockerfile
 $ cat Dockerfile
