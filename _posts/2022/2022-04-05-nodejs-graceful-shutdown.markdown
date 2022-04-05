@@ -167,6 +167,7 @@ In such a case docker starts an init process as PID 1.
 By default, docker uses [tini](https://github.com/krallin/tini) as an init process.
 Tini spawns your executable as a child, and waits for it to exit all the while reaping zombies and performing signal forwarding. 
 - Explicitly use tini or an alternative as an entry point and set your executable as a tini param.
+
 ```dockerfile
 ENTRYPOINT ["/sbin/tini", "--"]
 
@@ -181,9 +182,10 @@ The PID 1 process inside the container will receive SIGTERM, and after a grace p
 
 As a result if a container uses an init process then graceful shutdown works out of the box.
 
+[Code sample of containerized NestJS application](https://github.com/dtrunin/nodejs-graceful-shutdown)
+
 ### References / Further Reading
 
-[Code sample of containerized NestJS application](https://github.com/dtrunin/nodejs-graceful-shutdown) <br>
 [Graceful shutdown in Node.js](https://hackernoon.com/graceful-shutdown-in-nodejs-2f8f59d1c357) <br>
 [Node.js signal events](https://nodejs.org/api/process.html?ref=hackernoon.com#process_signal_events) <br>
 [Terminal signals](https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html?ref=hackernoon.com) <br>
