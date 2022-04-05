@@ -78,7 +78,7 @@ async function bootstrap() {
     // We can specify certain termination signals app should listen to 
     // app.enableShutdownHooks([ShutdownSignal.SIGINT, ShutdownSignal.SIGTERM]);
     
-await app.listen(3000);
+    await app.listen(3000);
 }
 bootstrap();
 ```
@@ -183,6 +183,7 @@ As a result if a container uses an init process then graceful shutdown works out
 
 ### References / Further Reading
 
+[Code sample of containerized NestJS application](https://github.com/dtrunin/nodejs-graceful-shutdown) <br>
 [Graceful shutdown in Node.js](https://hackernoon.com/graceful-shutdown-in-nodejs-2f8f59d1c357) <br>
 [Node.js signal events](https://nodejs.org/api/process.html?ref=hackernoon.com#process_signal_events) <br>
 [Terminal signals](https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html?ref=hackernoon.com) <br>
