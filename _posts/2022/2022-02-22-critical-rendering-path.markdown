@@ -88,7 +88,7 @@ Paint the individual nodes to the screen.
 ### Scripts
 
 JavaScript can modify the rest of the document content using the `document.write()` method.
-As a result if during DOM construction the browser encounters a script tag it is forces
+As a result if during DOM construction the browser encounters a script tag it is forced
 to stop parsing the remainder of the document until the script is fetched and executed.
 
 JavaScript can query and modify the CSSOM, hence CSS is blocking resource for JavaScript,
@@ -159,7 +159,7 @@ The downside is that when a speculation fails all its work becomes useless.
 `script2.js` is fetched earlier than `script1.js` but it is still executed after `script1.js`.
 3. Styles preceding a script should be fetched before the script is executing.
 `script3.js` is executed only when `header.css` is received.
-4. When scripts and applied to a page received, browser renders the page.
+4. When scripts and styles applied to a page received, browser renders the page.
 In our example `print.css` isn't applied to the page, and the browser doesn't wait the style is fetched to paint the page.
 Also browser doesn't wait fetching async and defer scripts.
 5. When all scripts fetched and executed the `Document.DOMContentLoaded` occurs.
