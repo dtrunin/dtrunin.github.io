@@ -21,7 +21,7 @@
 title: Dmitry Trunin
 email: trunin.dmitry@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Dmitry Trunin blog. Дмитрий Трунин блог.
+  Dmitry Trunin blog. dtrunin blog. Дмитрий Трунин блог.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dtrunin.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -37,7 +37,11 @@ menu_items:
     name: gitlab
     title: GitLab
   - type: social
-    url: www.linkedin.com/in/dmirty-trunin
+    url: https://github.com/dtrunin
+    name: github
+    title: GitHub
+  - type: social
+    url: https://www.linkedin.com/in/dtrunin
     name: linkedin
     title: LinkedIn
   - type: social
