@@ -63,6 +63,12 @@ confidential clients, based on their ability to keep a configuration time secret
 
 why not use implicit flow https://developer.okta.com/blog/2019/08/22/okta-authjs-pkce
 
+# PKCE
+
+Proof Key for Code Exchange is an extension to the Authorization Code flow to prevent 
+[CSRF](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12) (cross-site request forgery)
+and authorization code injection attacks.
+
 attack that PKCE prevents
 - https://datatracker.ietf.org/doc/html/rfc7636
 - https://docs.wso2.com/display/IS520/Mitigating+Authorization+Code+Interception+Attacks
