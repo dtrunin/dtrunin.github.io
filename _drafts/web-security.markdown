@@ -23,6 +23,7 @@ https://datatracker.ietf.org/doc/html/rfc6749#section-10.11
 
 # man-in-the-middle attacks
 
+[Strict-Transport-Security header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) 
 https://datatracker.ietf.org/doc/html/rfc6749#section-10.9
 
 # Credentials-Guessing Attacks
