@@ -38,6 +38,23 @@ Adding this header can prevent sending data and loading scripts from malicious s
 
 ### Cross-Site Request Forgery (CSRF or XSRF)
 
+In a CSRF attack an attacker finds a reproducible web request that executes a specific action
+such as changing an account password on the target page. The attacker Found request 
+
+
+
+In a CSRF attack, a victim is tricked by an attacker into submitting a web request that they did not intend.
+Found request link be embedded on a page within the attacker's control
+In a CSRF attack an attacker finds a reproducible web request that executes a specific action 
+such as changing an account password on the target page. Once such a request is identified, a link can be created that 
+generates this malicious request and that link can be embedded on a page within the attacker's control. 
+This link may be placed in such a way that it is not even necessary for the victim to click the link. 
+For example, it may be embedded within an html image tag on an email sent to the victim which will automatically 
+be loaded when the victim opens their email. Once the victim has clicked the link, 
+their browser will automatically include any cookies used by that website and submit the request to the web server. 
+The web server will not be able to identify the forgery because the request was made by a user that was logged in, 
+and submitted all the requisite cookies.
+
 https://datatracker.ietf.org/doc/html/rfc6749#section-10.12
 
 ### Phishing Attacks
@@ -93,10 +110,23 @@ https://datatracker.ietf.org/doc/html/rfc6749#section-10.10
 
 https://datatracker.ietf.org/doc/html/rfc6749#section-10.15
 
-### Spoofing Attacks
+### Content Spoofing Attacks/Content Injection Attack
+
+Similar to XSS only instead of scripts, markup or text is injected into a webpage.
+
+https://owasp.org/www-community/attacks/Content_Spoofing
+
+### JavaScript Hijacking
+
+https://vulncat.fortify.com/en/detail?id=desc.dataflow.java.javascript_hijacking
+https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf
 
 ### References / Further Reading
 
 [Types of attacks](https://developer.mozilla.org/en-US/docs/Web/Security/Types_of_attacks) <br>
 [Web security](https://developer.mozilla.org/en-US/docs/Web/Security) <br>
 [Executing a Man-in-the-Middle Attack in just 15 Minutes](https://www.thesslstore.com/blog/man-in-the-middle-attack-2/) <br>
+[Angular security](https://angular.io/guide/security) <br>
+(Helmet helps you secure your Express apps by setting various HTTP headers)[https://github.com/helmetjs/helmet] <br>
+(OWASP list of attacks)[https://owasp.org/www-community/attacks/] <br>
+(Cheat sheets)[https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html] <br>
